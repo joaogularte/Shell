@@ -18,18 +18,3 @@ echo $((++I))
 ((I++))
 echo $I
 
-
-###Condicionais
-VAR=1
-if [ $VAR = 1 ]; then
-    echo "Variavel é 1"
-fi
-
-
-DIA=$(date +'%A')
-
-if [ $DIA = "sexta" ]; then
-    echo "Yeahh, sexta!"
-else
-    echo "Noo..."
-fi
