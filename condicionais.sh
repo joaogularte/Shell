@@ -38,8 +38,8 @@ DIRNAME="/tmp/dirtest"
 
 ##Case
 
-DIA="Nasei"
-
+DIA=$(date +%A)
+echo $DIA
 case $DIA in
     "domingo")
         echo "Hoje é $(date +%A)";;
