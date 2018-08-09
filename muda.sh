@@ -9,8 +9,18 @@
 #Segundo parametro: extão desejada
 #
 
-for FILE in $(ls); do
-    NOVOFILE=${FILE/$1/$2}
-    echo $NOVOFILE
-    mv $FILE $NOVOFILE
-done 
+  
+muda(){
+    
+    [ $# -lt 2 ] && return 1
+
+    for FILE in $(ls); do
+        NOVOFILE=${FILE/$1/$2}
+        echo $NOVOFILE
+        if [ $FILE != $NOVOFILE ] ; then
+            mv $FILE $NOVOFILE
+        fi
+    done 
+}
+
+muda $1 $2
