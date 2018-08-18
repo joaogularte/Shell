@@ -7,7 +7,7 @@ LETRAS="ABcDEfgH"
 echo $LETRAS | tr [A-Z] [a-z]
 
 for FILE in * ; do
-    F=$(echo $FILE | tr [_] [:blank:])
+    F=$(echo $FILE | tr [:blank:] [_])
     echo $F
     [ "$FILE" = "$F" ] || mv -i "$FILE" "$F"
 done
