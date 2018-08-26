@@ -4,7 +4,7 @@
 #Rodar dentro do diretorio dos arquivos em questão
 #
 #
-#bash muda.sh .txt .doc
+#muda.sh .txt .doc
 #Primeiro parametro: extensão atual
 #Segundo parametro: extão desejada
 #
