@@ -1,4 +1,18 @@
 #!/bin/bash
+#
+#Conversor de bin -> dec e dec -> bin
+#
+#convert.sh bin 2
+#Primeiro paramentro: unidade que deseja
+#Segundo parametro: numero que deseja converter
+#
+#Examplos:
+#convert.sh dec 101
+#5
+#
+#convert.sh bin 8
+#1000
+
 
 if [ $# -lt 2 ] ; then
     echo "Número insuficiente de parametros"

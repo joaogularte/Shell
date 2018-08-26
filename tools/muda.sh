@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 #Script que muda a extensão dos arquivos de um diretorio
 #Rodar dentro do diretorio dos arquivos em questão
 #
